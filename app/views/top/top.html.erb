@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>トップページ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+     <div>
+        <header>
+          <ul class="header-menus">
+              <li>
+                <%= link_to("日報一覧" "") %>
+              </li>
+              <li>
+                <%= link_to("メモ作成機能", "") %>
+              </li>
+              <li>
+                <%= link_to("日報作成", "") %>
+              </li>
+              <li>
+                <%= link_to("フォーマット作成", "") %>
+              </li>
+              <li>
+                <%= link_to("ログアウト", "") %>
+              </li>
+          </ul>
+        </header>
+     </div>
+    <%= yield %>
+    <BR>
+    <BR>
+    <BR>
+    <!-- BRでレイアウト調整なんてあり得ないので、試行錯誤してCSSでレイアウト調整してね -->
+  </body>
+</html>
